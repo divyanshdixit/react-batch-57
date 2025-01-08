@@ -1,8 +1,9 @@
 index.js => entry point 
 
-App.js => main component file => all component will include in this App component
+App.jsx => main component file => all component will include in this App component
 
 component => functional , class 
+(component used in html tag format )
 
 jsx => js extension 
 
@@ -15,16 +16,21 @@ import/export  => default export , named export(object type export)
 Calculator application: 
 
 virtualDom => 
-diffing algorithm
+diffing algorithm => useful to compare b/w actual and virtual dom copy
 reconcilation 
 
-                    App component (whole app) => dom copy (latest changes) => next 
-                    h1      para image div
-                    welcome anurag
-                Calculator n1 = 10 , function as prop, call that function(10)
-                    Add n1
-                    Sum
 
+                               App (virtual dom copy ) => copy actual compare
+
+                            div          h1 
+                        h2       h3
+                   
+
+                        App
+                    parent ()
+                    child (x =10)
+                    child1
+                    child2
  sending a prop from parent to nested children component => prop drilling
  send a prop from child to parent => prop lifting
 

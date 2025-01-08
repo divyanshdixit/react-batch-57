@@ -1,12 +1,19 @@
-import react from "react";
-import Child from './Child';
+import ChildCom from "./Child"
 
-// react fragments (shorter version)
-const Parent = () => {
-     return <> 
-        <h1> Welcome anurag </h1>
-        <Child />
-    </>
+const ParentComponent = () => {
+    var name ="divyansh"
+    return (
+        // <> </> => React fragments (when we do not need any extra html node)
+        <>
+            <h1> Parent component  </h1>
+            <ChildCom name={name} age="28"/>
+            <ChildCom name="anurag" age="22"/>
+        </>
+        
+    )
+    
 }
 
-export default Parent;
+export {ParentComponent}
+
+// export default ParentComponent

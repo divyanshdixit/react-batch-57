@@ -1,5 +1,9 @@
-const Child = () => {
-    return <h2> This is child component </h2>
+
+// props => object
+// object destructuring 
+
+const ChildCom = ({name, age}) => {
+    return <h1> Child component - {name} {age} </h1>
 }
 
-export default Child;
+export default ChildCom
