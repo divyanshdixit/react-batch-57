@@ -9,7 +9,7 @@ jsx => js extension
 
 props=> immutable => can not change, 
 
-state => mutable => can be changed, 
+state => mutable => can be changed, private variable to the component
 
 import/export  => default export , named export(object type export)
 
@@ -26,13 +26,13 @@ reconcilation
                         h2       h3
                    
 
-                        App
-                    parent ()
-                    child (x =10)
-                    child1
-                    child2
+                        App 
+            parent1 (x = 10)       PARENT 2
+            child 1             child 3
+            child 2 
+            child 3             child 4(x = 10)
  sending a prop from parent to nested children component => prop drilling
- send a prop from child to parent => prop lifting
+ send a prop from child to parent => prop lifting (make a func in parent , pass it to child and call with actual value)
 
  context api  => solution for prop drilling 
 
