@@ -1,0 +1,8 @@
+// 1- create a 3 input form (name, email, phone, and submit button)- get the value from user and display the values in ui or console.
+
+// 2- Create calculator application (add, mul, sub, div)
+2 input fields 
+button add
+button mul
+button sub
+button div
